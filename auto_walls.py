@@ -240,6 +240,7 @@ def get_wallpaper_thumbnail(
             "-vf", f"scale='if(gt(iw,ih),{max_size},-1)':'if(gt(iw,ih),-1,{max_size})'", 
             "-frames:v", "1", 
             "-q:v", str(quality), 
+            "-update", "1",
             wallpaper_thumbnail
         ])
 
