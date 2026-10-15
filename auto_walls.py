@@ -376,9 +376,7 @@ def set_next(aw: AutoWalls):
     aw.set_wallpaper(aw.wallpapers[i])
 
 def reset(aw: AutoWalls):
-#    del aw.cache["wallpapers"]
     aw.reset_state()
-#    random.shuffle(aw.wallpapers)
 
 def set_prev(aw: AutoWalls):
     if aw.index <= 0:  # allready first wallpaper
